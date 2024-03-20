@@ -1,0 +1,18 @@
+/* Estilos para WebKit (Chrome, Safari, etc.) */
+/* Cambia el color de fondo y el ancho de la scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #333333;
+  }
+  
+  /* Estilos para el thumb (el "scrollbar" en sí) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #49B88C;
+    border-radius: 10px;
+  }
+  
+  /* Estilos cuando pasas el mouse sobre la scrollbar */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #49B88C;
+  }
+  
