@@ -1,14 +1,14 @@
 export function Footer() {
   return (
-    <footer className="h-[30%] bg-white p-4       backdrop-blur-none ">
-      <div className="flex items-center justify-between  h-full px-24 text-sm ">
+    <footer className="h-[30%] bg-white     backdrop-blur-none ">
+      <div className="flex items-center justify-between max-md:justify-start max-md:gap-8 w-full  h-full px-24 max-md:px-0  ">
         <img
           src="/images/logo.png"
           alt="patio urbano hostel"
-          className="w-32"
+          className="w-32 max-md:w-20"
         />
 
-        <div className="flex gap-8 font-light">
+        <div className="flex max-md:flex-col max-md:gap-2 gap-8 font-light text-sm max-md:text-xs ">
           <div className="flex flex-col gap-2">
             <h2 className="text-green font-bold">Dirección</h2>
             <div className="flex flex-col gap-1">
@@ -16,7 +16,7 @@ export function Footer() {
               <span>Montevideo, Uruguay</span>
             </div>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex md:flex-col gap-2">
             <div className="flex flex-col gap-2">
               <h2 className="text-green font-bold">Email</h2>
               <div className="flex flex-col gap-1">

@@ -20,19 +20,25 @@ export function Navbar() {
   return (
     <nav className="fixed w-full z-10    top-0 flex justify-center scale-in-ver-top">
       <div
-        className={` flex justify-between items-center w-full px-6 py-2  bg-[rgba(255,255,255,0)] transition-all duration-200  text-white  top-0 z-10 ${
-          scrolling ? " bg-black" : ""
+        className={` flex  items-center w-full  px-6 py-2  bg-[rgba(255,255,255,0)] transition-all duration-200  text-white  top-0 z-10 ${
+          scrolling
+            ? " bg-black max-md:p-2  justify-between  "
+            : "max-md:p-4 justify-center"
         } `}
       >
-        <div className="w-1/12 h-[12vh]">
-          {scrolling && <img src="/images/logo.png" className=" w-full " />}
+        <div className={`  ${scrolling ? " w-1/12 max-md:w-1/4" : "w-0 "}`}>
+          {scrolling && <img src="/images/logo.png" className=" w-full  " />}
         </div>
-        <div className="flex gap-4 text-gray-500">
+        <div
+          className={`flex   ${
+            scrolling ? "gap-2" : " gap-10"
+          }  text-gray-500 max-md:text-xs`}
+        >
           {["Nosotros", "¿Qué ofrecemos?", "Location"].map((item) => (
             <a
               key={item}
               href={`#${item}`}
-              className="cursor-pointer font-semibold transition-all duration-200 hover:font-bold"
+              className="cursor-pointer font-normal transition-all duration-200 hover:font-bold"
             >
               {item}
             </a>

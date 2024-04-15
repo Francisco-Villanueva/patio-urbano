@@ -42,11 +42,11 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
   }, []);
 
   const buttonStyle =
-    "transition-all duration-150 py-2 px-6 hover:bg-blur-black rounded-md";
+    "transition-all duration-150 p-2  bg-blur-black hover:bg-black rounded-md";
   return (
-    <div className="slider relative grid place-items-center w-full  ">
+    <div className="slider flex flex-col justify-center max-md:justify-start w-full   ">
       <div
-        className="slide-wrapper flex absolute w-full"
+        className="slide-wrapper flex  w-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, i) => (
@@ -59,7 +59,7 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
           </div>
         ))}
       </div>
-      <div className="flex  absolute w-full justify-between bg-tran">
+      <div className="flex   w-full justify-between ]">
         <button onClick={prevSlide} className={buttonStyle}>
           <ArrowLeft />
         </button>

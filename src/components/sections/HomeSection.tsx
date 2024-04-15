@@ -1,10 +1,10 @@
-import { PageLayout } from "../../common";
+import { AsideLayout, PageLayout } from "../../common";
 
 export function HomeSection() {
   return (
     <PageLayout id="Nosotros" mode="ligth">
-      <aside className="w-1/2 h-full  grid place-items-center ">
-        <div className="w-3/4 h-3/4  flex relative">
+      <AsideLayout>
+        <div className="w-3/4 h-3/4 max-md:h-full max-md:w-full    flex relative">
           <section className="h-[90%] w-1/2 flex flex-col justify-around items-center absolute left-0 ">
             <div className=" aspect-square h-1/2 bg-white   rounded-lg ">
               <img
@@ -38,12 +38,14 @@ export function HomeSection() {
             </div>
           </section>
         </div>
-      </aside>
-      <aside className="w-1/2 h-full  grid place-items-center ">
-        <div className=" flex flex-col justify-center  w-3/4 h-3/4  text-gray-200   gap-6">
-          <h2 className="font-bold text-[2.1rem]">¿Quiénes somos?</h2>
+      </AsideLayout>
+      <AsideLayout>
+        <div className=" flex flex-col justify-center  w-3/4 h-3/4   text-gray-200   gap-6 max-md:gap-2">
+          <h2 className="font-bold text-[2.1rem] max-md:text-xl">
+            ¿Quiénes somos?
+          </h2>
           <div className=" border-[2px] border-green w-1/6" />
-          <div className="flex  flex-col gap-4 ">
+          <div className="flex  flex-col gap-4 max-md:text-xs ">
             <p className="w-full text-start ">
               Buscamos dar un servicio personalizado. Brindar una experiencia
               diferente para un cliente que anhele regresar, o que en su retina
@@ -59,7 +61,7 @@ export function HomeSection() {
             </p>
           </div>
         </div>
-      </aside>
+      </AsideLayout>
     </PageLayout>
   );
 }
