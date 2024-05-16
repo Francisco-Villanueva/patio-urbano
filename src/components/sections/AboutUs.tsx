@@ -1,6 +1,15 @@
 import { Slider } from "..";
 import { AsideLayout, PageLayout } from "../../common";
-import { BedIcon, ParkingIcon, WifiIcon } from "../../icons";
+import {
+  BedIcon,
+  ColdIcon,
+  ComunityIcon,
+  KitchenIcon,
+  ParkingIcon,
+  TreeIcon,
+  TvIcon,
+  WifiIcon,
+} from "../../icons";
 
 export function AboutUs() {
   return (
@@ -24,7 +33,27 @@ export function AboutUs() {
             </div>
             <div className="flex  items-center gap-2">
               <ParkingIcon color="white" />
-              <b>Estacionamiento gratuito</b>
+              <b>Estacionamiento gratuito para birrodados</b>
+            </div>
+            <div className="flex  items-center gap-2">
+              <KitchenIcon />
+              <b>Cocina Equipada</b>
+            </div>
+            <div className="flex  items-center gap-2">
+              <ColdIcon />
+              <b>Aire acondicionado / calefacción</b>
+            </div>
+            <div className="flex  items-center gap-2">
+              <TvIcon />
+              <b>TV en recepción / living</b>
+            </div>
+            <div className="flex  items-center gap-2">
+              <ComunityIcon />
+              <b>Áreas comunes</b>
+            </div>
+            <div className="flex  items-center gap-2">
+              <TreeIcon />
+              <b>Patio</b>
             </div>
           </div>
         </div>

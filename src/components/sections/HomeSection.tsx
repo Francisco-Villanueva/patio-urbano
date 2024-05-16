@@ -47,17 +47,20 @@ export function HomeSection() {
           <div className=" border-[2px] border-green w-1/6" />
           <div className="flex  flex-col gap-4 max-md:text-xs ">
             <p className="w-full text-start ">
-              Buscamos dar un servicio personalizado. Brindar una experiencia
-              diferente para un cliente que anhele regresar, o que en su retina
-              y su memoria quede el recuerdo de una vivencia genuina y no
-              superficial. Ofrecemos la experiencia de una estancia relajante en
-              un ambiente íntimo. Con un estilo y un carácter propio. Una mezcla
-              perfecta entre entorno, ambiente y exclusividad.
+              Somos un Hostal solo de habitaciones privadas. Ubicados en el
+              Barrio Costero Pocitos, al Sur de la Ciudad Montevideana. Nos
+              encontramos cercanos a la playa, a diversos locales gastronómicos
+              y a una variada red comercial.
             </p>
             <p className="w-full text-start ">
-              Ofrecemos la experiencia de una estancia relajante en un ambiente
-              íntimo. Con un estilo y un carácter propio. Una mezcla perfecta
-              entre entorno, ambiente y exclusividad.
+              En Patio Urbano nos distinguimos por ofrecer a nuestros huéspedes,
+              tranquilidad y un ambiente descontracturado donde poder llegar a
+              descansar.
+            </p>
+            <p className="w-full text-start ">
+              Nuestros visitantes suelen ser parejas, personas solas y pequeños
+              grupos familiares que buscan un lugar amigable y seguro donde
+              poder compartir experiencias y recargar energías.
             </p>
           </div>
         </div>
