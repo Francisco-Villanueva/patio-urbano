@@ -8,14 +8,14 @@ export function HomeSection() {
           <section className="h-[90%] w-1/2 flex flex-col justify-around items-center absolute left-0 ">
             <div className=" aspect-square h-1/2 bg-white   rounded-lg ">
               <img
-                src="/images/room1.jpg"
+                src="/images/slider/3.jpg"
                 alt="patio urbano habitaciones"
-                className="h-full object-contain rounded-md shadow-lg"
+                className=" object-cover w-full rounded-md shadow-lg"
               />
             </div>
             <div className=" aspect-square h-1/3  ">
               <img
-                src="/images/room2.jpg"
+                src="/images/slider/5.jpg"
                 alt="patio urbano habitaciones"
                 className="h-full object-contain rounded-md shadow-lg"
               />
@@ -24,14 +24,14 @@ export function HomeSection() {
           <section className="h-[90%] w-1/2 flex flex-col justify-around items-center absolute right-0 bottom-0 ">
             <div className=" aspect-square h-1/2 ">
               <img
-                src="/images/living.jpg"
+                src="/images/slider/1.jpg"
                 alt="patio urbano habitaciones"
-                className=" object-contain rounded-lg shadow-lg "
+                className=" object-cover w-full rounded-lg shadow-lg "
               />
             </div>
             <div className=" aspect-square h-1/2 ">
               <img
-                src="/images/room3.jpg"
+                src="/images/slider/6.jpg"
                 alt="patio urbano habitaciones"
                 className="h-full object-contain rounded-md shadow-lg"
               />

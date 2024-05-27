@@ -63,10 +63,12 @@ export function AboutUs() {
           <div className="w-5/6 max-md:w-[80%] h-full  aspect-square  flex relative">
             <Slider
               images={[
-                "/images/slider/slide1.jpg",
-                "/images/slider/slide2.jpg",
-                "/images/slider/slide3.jpg",
-                "/images/slider/slide4.jpg",
+                "/images/slider/1.jpg",
+                "/images/slider/2.jpg",
+                "/images/slider/3.jpg",
+                "/images/slider/4.jpg",
+                "/images/slider/5.jpg",
+                "/images/slider/6.jpg",
               ]}
             />
           </div>
