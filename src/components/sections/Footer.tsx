@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="h-[30%] bg-white border-t     backdrop-blur-none ">
-      <div className="flex items-center justify-between max-md:justify-start max-md:gap-8 w-full  h-full px-24 max-md:px-0  ">
+      <div className="flex items-center justify-between max-md:justify-center  max-md:gap-12 w-full  h-full px-24 max-md:px-0  ">
         <img
           src="/logo.png"
           alt="patio urbano hostel"

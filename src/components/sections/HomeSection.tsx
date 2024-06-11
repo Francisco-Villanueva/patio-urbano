@@ -1,13 +1,21 @@
 import { AsideLayout, PageLayout } from "../../common";
-import { Slider } from "../Slider";
+import { CarouselDemo } from "../Carousel/Carousel";
 
 export function HomeSection() {
   return (
     <PageLayout id="Nosotros" mode="ligth">
       <AsideLayout>
-        <section className="w-full h-full flex justify-center items-start  ">
-          <div className=" h-full  aspect-square  flex relative">
-            <Slider
+        <section className="w-full h-full max-md:w-5/6 flex justify-center items-center  max-md:items-start    ">
+          <CarouselDemo
+            images={[
+              "/turismo/4.jpg",
+              "/turismo/3.jpg",
+              "/turismo/5.jpg",
+              "/turismo/6.jpg",
+              "/turismo/7.jpg",
+            ]}
+          />
+          {/* <Slider
               images={[
                 "/turismo/4.jpg",
                 "/turismo/3.jpg",
@@ -15,8 +23,7 @@ export function HomeSection() {
                 "/turismo/6.jpg",
                 "/turismo/7.jpg",
               ]}
-            />
-          </div>
+            /> */}
         </section>
       </AsideLayout>
       <AsideLayout>
@@ -24,7 +31,7 @@ export function HomeSection() {
           <h2 className="font-bold text-[2.1rem] max-md:text-xl text-primary">
             ¿Quiénes somos?
           </h2>
-          <div className=" border  w-1/4" />
+          <div className=" border  w-1/4 border-primary" />
           <div className="flex  flex-col gap-4 max-md:text-xs ">
             <p className="w-full text-start ">
               Somos un Hostal solo de habitaciones privadas. Ubicados en el

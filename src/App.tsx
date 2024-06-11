@@ -31,27 +31,27 @@ function App() {
   return (
     <main className=" h-[100vh] scroll-smooth relative overflow-y  ">
       <Navbar />
-      <section className="h-full   w-full  grid place-items-center">
+      <section className="h-full   w-full  grid place-items-center ">
         <div className="bg-black h-full w-full    "></div>
         <img
           src="/images/montevideo.jpg"
           className=" fixed top-0 left-0  h-full w-full object-cover "
           alt="Montevideo Hostel Posadas Noche"
         />
-        <div className="text-white flex  justify-center items-center  bg-[rgba(0,0,0,.5)]  w-full h-full    fixed">
+        <div className="text-white flex  justify-center items-center  bg-[rgba(0,0,0,.5)]  w-full h-full     fixed">
           {!scrolling && (
-            <section className="flex justify-center gap-10  max-md:flex-col max-md:items-center p-10 max-md:p-4 max-md:h-full ">
+            <section className="flex justify-center gap-10  max-md:flex-col max-md:items-center p-10 max-md:p-4 max-md:h-full  ">
               <img
                 src="/logo.png"
-                className=" w-1/4 h-1/4 max-md:w-1/2 aspect-square scale-in-hor-center rounded-full "
+                className=" w-1/4 md:h-1/4  max-md:w-1/2 aspect-square scale-in-hor-center rounded-full "
                 alt="patio urbano sits and beds"
               />
-              <div className="text-left flex flex-col justify-between items-end  w-1/2">
+              <div className="text-left flex flex-col justify-between items-end  w-1/2 max-md:w-full">
                 <div className="flex flex-col ">
-                  <h1 className="text-5xl font-bold mb-4">
+                  <h1 className="text-5xl font-bold mb-4 max-md:text-2xl">
                     Bienvenido a Patio Urbano
                   </h1>
-                  <p className="text-lg ">
+                  <p className="text-lg max-md:text-sm">
                     Disfruta de una estancia inolvidable en nuestro acogedor
                     refugio. Explora las hermosas playas y la vibrante vida
                     nocturna de Montevideo.
@@ -65,8 +65,8 @@ function App() {
 
                   <br />
                   <br />
-                  <div className="flex flex-col gap-2   font-semibold text-lg ">
-                    <span className="">Medios de pago</span>
+                  <div className="flex flex-col gap-2 max-md:items-center   font-semibold text-lg ">
+                    <span className="max-md:text-sm">Medios de pago</span>
                     <div className="flex gap-6 items-start text-sm font-light">
                       <div className="flex flex-col items-center  gap-2">
                         <img
