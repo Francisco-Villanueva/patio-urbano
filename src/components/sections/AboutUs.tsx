@@ -1,4 +1,3 @@
-import { Slider } from "..";
 import { AsideLayout, PageLayout } from "../../common";
 import {
   BedIcon,
@@ -10,6 +9,7 @@ import {
   TvIcon,
   WifiIcon,
 } from "../../icons";
+import { CarouselDemo } from "../Carousel/Carousel";
 
 export function AboutUs() {
   return (
@@ -59,19 +59,17 @@ export function AboutUs() {
         </div>
       </AsideLayout>
       <AsideLayout>
-        <section className="w-full h-full flex justify-center items-center  max-md:items-start   ">
-          <div className="w-5/6 max-md:w-[80%]  h-3/4 max-md:h-full  aspect-square  flex relative">
-            <Slider
-              images={[
-                "/images/slider/1.jpg",
-                "/images/slider/2.jpg",
-                "/images/slider/3.jpg",
-                "/images/slider/4.jpg",
-                "/images/slider/5.jpg",
-                "/images/slider/6.jpg",
-              ]}
-            />
-          </div>
+        <section className="w-full h-full flex justify-center items-center  max-md:items-start    ">
+          <CarouselDemo
+            images={[
+              "/hostal/1.jpg",
+              "/hostal/2.jpg",
+              "/hostal/3.jpg",
+              "/hostal/4.jpg",
+              "/hostal/5.jpg",
+              "/hostal/6.jpg",
+            ]}
+          />
         </section>
       </AsideLayout>
     </PageLayout>
