@@ -6,7 +6,7 @@ interface AsideLayoutProps {
 }
 export function AsideLayout({ children }: AsideLayoutProps) {
   return (
-    <aside className="w-1/2 max-md:w-full h-full max-md:h-1/2  grid place-items-center   ">
+    <aside className="w-1/2 max-md:w-full   max-md:h-1/2  grid place-items-center   ">
       {children}
     </aside>
   );

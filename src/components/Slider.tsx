@@ -9,19 +9,19 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [transitioning, setTransitioning] = useState(false);
   const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
     if (!transitioning) {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
       setTransitioning(true);
     }
   };
 
   const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
     if (!transitioning) {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
       setTransitioning(true);
     }
   };
@@ -54,12 +54,12 @@ export const Slider: React.FC<SliderProps> = ({ images }) => {
             <img
               src={image}
               alt={`Slide ${currentIndex}`}
-              className="rounded-3xl w-2/3  aspect-auto"
+              className="rounded-3xl w-full h-full  aspect-auto"
             />
           </div>
         ))}
       </div>
-      <div className="flex   w-full justify-between  z-50">
+      <div className="flex   w-full justify-between items-center h-full  z-50">
         <button onClick={prevSlide} className={buttonStyle}>
           <ArrowLeft />
         </button>

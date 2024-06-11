@@ -1,43 +1,23 @@
 import { AsideLayout, PageLayout } from "../../common";
+import { Slider } from "../Slider";
 
 export function HomeSection() {
   return (
     <PageLayout id="Nosotros" mode="ligth">
       <AsideLayout>
-        <div className="w-3/4 h-3/4 max-md:h-full max-md:w-full    flex relative">
-          <section className="h-[90%] w-1/2 flex flex-col justify-around items-center absolute left-0 ">
-            <div className=" aspect-square h-1/2 bg-white   rounded-lg ">
-              <img
-                src="/images/slider/3.jpg"
-                alt="patio urbano habitaciones"
-                className=" object-cover w-full rounded-md shadow-lg"
-              />
-            </div>
-            <div className=" aspect-square h-1/3  ">
-              <img
-                src="/images/slider/5.jpg"
-                alt="patio urbano habitaciones"
-                className="h-full object-contain rounded-md shadow-lg"
-              />
-            </div>
-          </section>
-          <section className="h-[90%] w-1/2 flex flex-col justify-around items-center absolute right-0 bottom-0 ">
-            <div className=" aspect-square h-1/2 ">
-              <img
-                src="/images/slider/1.jpg"
-                alt="patio urbano habitaciones"
-                className=" object-cover w-full rounded-lg shadow-lg "
-              />
-            </div>
-            <div className=" aspect-square h-1/2 ">
-              <img
-                src="/images/slider/6.jpg"
-                alt="patio urbano habitaciones"
-                className="h-full object-contain rounded-md shadow-lg"
-              />
-            </div>
-          </section>
-        </div>
+        <section className="w-full h-full flex justify-center items-start  ">
+          <div className=" h-full  aspect-square  flex relative">
+            <Slider
+              images={[
+                "/turismo/4.jpg",
+                "/turismo/3.jpg",
+                "/turismo/5.jpg",
+                "/turismo/6.jpg",
+                "/turismo/7.jpg",
+              ]}
+            />
+          </div>
+        </section>
       </AsideLayout>
       <AsideLayout>
         <div className=" flex flex-col justify-center  w-3/4 h-3/4   text-gray-200   gap-6 max-md:gap-2">

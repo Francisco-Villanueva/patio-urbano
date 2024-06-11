@@ -11,8 +11,10 @@ export function PageLayout({ children, id, mode }: PageLayoutProps) {
   return (
     <section
       id={id}
-      className={`w-full relative flex ${
-        mode === "ligth" ? "max-md:flex-col-reverse " : "max-md:flex-col "
+      className={`w-full relative flex   ${
+        mode === "ligth"
+          ? "max-md:flex-col-reverse "
+          : "max-md:flex-col max-md:justify-center"
       } h-full  backdrop-blur-md  ${bgStyle} max-md:p-4`}
     >
       {children}

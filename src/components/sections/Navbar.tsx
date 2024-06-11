@@ -26,8 +26,10 @@ export function Navbar() {
             : "max-md:p-4 justify-center"
         } `}
       >
-        <div className={`  ${scrolling ? " w-1/12 max-md:w-1/4" : "w-0 "}`}>
-          {scrolling && <img src="/images/logo.png" className=" w-full  " />}
+        <div className={`  ${scrolling ? " w-24 max-md:w-1/12" : "w-0 "}`}>
+          {scrolling && (
+            <img src="/logo.png" className=" w-full rounded-full  " />
+          )}
         </div>
         <div
           className={`flex   ${

@@ -16,14 +16,14 @@ function App() {
       <section className="h-full   w-full  grid place-items-center">
         <div className="bg-black h-full w-full    "></div>
         <img
-          src="/images/montevideo2.jpeg"
+          src="/images/montevideo.jpg"
           className=" fixed top-0 left-0  h-full w-full object-cover "
           alt="Montevideo Hostel Posadas Noche"
         />
-        <div className="text-white flex flex-col items-center bg-[rgba(0,0,0,.9)]  w-full h-full justify-center gap-2  fixed">
+        <div className="text-white flex flex-col items-center bg-[rgba(0,0,0,.5)]  w-full h-full justify-center gap-2  fixed">
           <img
-            src="/images/logo.png"
-            className=" w-1/4 max-md:w-1/2 scale-in-hor-center "
+            src="/logo.png"
+            className=" w-1/4 max-md:w-1/2 scale-in-hor-center rounded-full "
             alt="patio urbano sits and beds"
           />
           <CryptoInfo />
