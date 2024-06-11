@@ -3,7 +3,7 @@ import { useState } from "react";
 export function CryptoInfo() {
   const [show, setShow] = useState(false);
   return (
-    <div className="   flex flex-col  gap-2 absolute bottom-0 left-0 m-6">
+    <div className="   flex flex-col  gap-2 absolute top-10 left-0 m-6">
       <span
         className={`text-sm  font-thin bg-black p-2 rounded-md transition-all duration-300 ${
           show
@@ -16,7 +16,7 @@ export function CryptoInfo() {
       <img
         src="/images/btc.png"
         alt="bitcoin crypto"
-        className=" w-[35px]"
+        className=" w-[45px]"
         onMouseOver={() => setShow(true)}
         onMouseLeave={() => setShow(false)}
       />

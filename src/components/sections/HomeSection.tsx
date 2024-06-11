@@ -20,11 +20,11 @@ export function HomeSection() {
         </section>
       </AsideLayout>
       <AsideLayout>
-        <div className=" flex flex-col justify-center  w-3/4 h-3/4   text-primary   gap-6 max-md:gap-2">
-          <h2 className="font-bold text-[2.1rem] max-md:text-xl">
+        <div className=" flex flex-col justify-center  w-3/4 h-3/4      gap-6 max-md:gap-2">
+          <h2 className="font-bold text-[2.1rem] max-md:text-xl text-primary">
             ¿Quiénes somos?
           </h2>
-          <div className=" border-[2px]  w-1/6" />
+          <div className=" border  w-1/4" />
           <div className="flex  flex-col gap-4 max-md:text-xs ">
             <p className="w-full text-start ">
               Somos un Hostal solo de habitaciones privadas. Ubicados en el
