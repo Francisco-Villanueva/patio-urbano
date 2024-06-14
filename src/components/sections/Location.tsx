@@ -4,7 +4,7 @@ import { Map } from "../Map/Map";
 export function Location() {
   return (
     <PageLayout id="Location" mode="ligth">
-      <div className=" flex  gap-6 justify-center max-md:flex-col w-5/6 m-auto h-3/4 max-md:h-[90%]  p-4   rounded-xl">
+      <div className=" flex  gap-6 justify-center max-md:flex-col w-5/6 m-auto h-3/4 max-md:h-[90%]  p-4 max-md:w-full  rounded-xl">
         <div className="w-1/2 flex flex-col gap-8  max-md:w-full  max-md:text-sm ">
           <h2 className="text-3xl max-md:text-xl font-semibold text-primary ">
             ¿Dónde estamos?

@@ -51,7 +51,7 @@ function App() {
                   <h1 className="text-5xl font-bold mb-4 max-md:text-2xl">
                     Bienvenido a Patio Urbano
                   </h1>
-                  <p className="text-lg max-md:text-sm">
+                  <p className="text-lg max-md:text-xs">
                     Disfruta de una estancia inolvidable en nuestro acogedor
                     refugio. Explora las hermosas playas y la vibrante vida
                     nocturna de Montevideo.
@@ -63,30 +63,28 @@ function App() {
                     la capital uruguaya.
                   </p>
 
-                  <br />
-                  <br />
                   <div className="flex flex-col gap-2 max-md:items-center   font-semibold text-lg ">
-                    <span className="max-md:text-sm">Medios de pago</span>
+                    <span className="max-md:text-xs">Medios de pago</span>
                     <div className="flex gap-6 items-start text-sm font-light">
-                      <div className="flex flex-col items-center  gap-2">
+                      <div className="flex flex-col items-center  gap-2 max-md:gap-1">
                         <img
                           src="/images/btc.png"
                           alt="bitcoin crypto"
-                          className=" w-[45px]"
+                          className=" w-[45px] max-md:w-[25px]"
                         />
-                        <span>Crypto</span>
+                        <span className="max-md:text-xs">Crypto</span>
                       </div>
-                      <div className="flex flex-col items-center  gap-2">
-                        <div className=" w-[45px] aspect-square flex justify-center items-center bg-primary rounded-full">
+                      <div className="flex flex-col items-center  gap-2 max-md:gap-1">
+                        <div className=" w-[45px] max-md:w-[25px] aspect-square flex justify-center items-center bg-primary rounded-full">
                           <CreditCard />
                         </div>
-                        <span>Tarjeta</span>
+                        <span className="max-md:text-xs">Tarjeta</span>
                       </div>
-                      <div className="flex flex-col items-center gap-2">
-                        <div className=" w-[45px] aspect-square flex justify-center items-center bg-primary rounded-full">
+                      <div className="flex flex-col items-center gap-2 max-md:gap-1">
+                        <div className=" w-[45px] max-md:w-[25px] aspect-square flex justify-center items-center bg-primary rounded-full">
                           <CurrencyIcon />
                         </div>
-                        <span>Efectivo</span>
+                        <span className="max-md:text-xs">Efectivo</span>
                       </div>
                     </div>
                   </div>

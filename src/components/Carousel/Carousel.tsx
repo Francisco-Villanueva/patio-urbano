@@ -15,7 +15,7 @@ export function CarouselDemo({ images }: { images: string[] }) {
             <img
               src={image}
               alt={`Slide `}
-              className="rounded-xl max-md:h-[250px] mx-auto"
+              className="rounded-xl max-md:h-full mx-auto"
             />
           </CarouselItem>
         ))}

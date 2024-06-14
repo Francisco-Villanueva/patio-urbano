@@ -15,7 +15,7 @@ export function AboutUs() {
   return (
     <PageLayout id="¿Qué ofrecemos?" mode="dark">
       <AsideLayout>
-        <div className="w-3/4 h-3/4  text-gray-200 flex flex-col justify-center   pl-32 max-md:pl-0  gap-6 ">
+        <div className="w-3/4 h-3/4 max-md:w-full  text-gray-200 flex flex-col justify-center   pl-32 max-md:pl-0  gap-6 ">
           <div className="flex flex-col  gap-1  ">
             <h2 className="font-bold text-[2rem] max-md:text-xl text-primary">
               ¿Qué ofrecemos?
@@ -59,7 +59,7 @@ export function AboutUs() {
         </div>
       </AsideLayout>
       <AsideLayout>
-        <section className="w-full h-full max-md:w-5/6 flex justify-center items-center  max-md:items-start    ">
+        <section className="w-full h-full max-md:w-[70%] flex justify-center items-center  max-md:items-start    ">
           <CarouselDemo
             images={[
               "/hostal/1.jpg",

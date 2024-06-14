@@ -5,7 +5,7 @@ export function HomeSection() {
   return (
     <PageLayout id="Nosotros" mode="ligth">
       <AsideLayout>
-        <section className="w-full h-full max-md:w-5/6 flex justify-center items-center  max-md:items-start    ">
+        <section className="w-full h-full max-md:w-[75%] flex justify-center items-center  max-md:items-start    ">
           <CarouselDemo
             images={[
               "/turismo/4.jpg",
@@ -15,19 +15,10 @@ export function HomeSection() {
               "/turismo/7.jpg",
             ]}
           />
-          {/* <Slider
-              images={[
-                "/turismo/4.jpg",
-                "/turismo/3.jpg",
-                "/turismo/5.jpg",
-                "/turismo/6.jpg",
-                "/turismo/7.jpg",
-              ]}
-            /> */}
         </section>
       </AsideLayout>
       <AsideLayout>
-        <div className=" flex flex-col justify-center  w-3/4 h-3/4      gap-6 max-md:gap-2">
+        <div className=" flex flex-col justify-center  w-3/4 max-md:w-full h-3/4      gap-6 max-md:gap-2">
           <h2 className="font-bold text-[2.1rem] max-md:text-xl text-primary">
             ¿Quiénes somos?
           </h2>

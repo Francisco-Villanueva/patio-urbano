@@ -7,9 +7,9 @@ export function ContactButton({ landing = false }: { landing?: boolean }) {
   return landing ? (
     <a
       href={whatsappURL}
-      className="px-6 py-3 bg-primary text-white font-semibold rounded-md hover:bg-primary/85 flex items-center gap-2"
+      className="px-6 py-3 max-md:mx-auto max-md:my-2 max-md:py-1   max-md:text-xs bg-primary text-white font-semibold rounded-md hover:bg-primary/85 flex items-center gap-2"
     >
-      <span>Conatctarse</span>
+      <span className="">Conatctarse</span>
       <WhatsAppIcon width={20} />
     </a>
   ) : (
